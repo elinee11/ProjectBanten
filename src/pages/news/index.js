@@ -9,6 +9,7 @@ import { Template } from "../../components/organisms";
 import { useFetcherData } from "../../hooks";
 import { SearchBox } from "../../components/atoms";
 import { removeImageSizeSuffix } from "../../utils/strings";
+import WeatherApi from "../../components/WeatherApi";
 
 export default function News() {
   const { data, dataLoading } = useFetcherData("posts");
@@ -58,6 +59,7 @@ export default function News() {
               ))}
             </div>
           )}
+          <WeatherApi />
         </Container>
       </Section>
     </Template>
