@@ -10,7 +10,7 @@ export default function Button({ color, href, children, className, onClick }) {
     <Link
       to={href}
       className={classNames(
-        "py-3 px-5 rounded-full text-white-50",
+        "py-3 px-6 text-center rounded-full text-white-50",
         {
           "bg-big-stone-500 hover:bg-big-stone-600": color === "primary",
         },
@@ -22,7 +22,7 @@ export default function Button({ color, href, children, className, onClick }) {
   ) : (
     <button
       className={classNames(
-        "py-3 px-5 rounded-full text-white-50",
+        "py-3 px-6 text-center rounded-full text-white-50",
         {
           "bg-big-stone-500 hover:bg-big-stone-600": color === "primary",
         },

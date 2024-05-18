@@ -14,6 +14,7 @@ import { removeImageSizeSuffix } from "./utils/strings";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Weather from "./components/weather";
+import "./index.css"
 
 function App() {
   const [cultureSelected, setCultureSelected] = useState(0);
@@ -39,12 +40,16 @@ function App() {
 
   return (
     <Template title="Beranda">
-      <Weather />
       <Section id="headline" isTop={true}>
         <Container className="text-white-950">
+          <div className="gap-6">
+
+          <Weather />
+
           <h1 className="text-4xl md:text-5xl font-bold md:max-w-2xl mb-5 leading-[1.2]">
             Jelajah Wisata & Budaya Di Provinsi Banten
           </h1>
+          </div>
           <p className="text-lg md:text-xl md:max-w-3xl mb-10">
             Temukan keindahan alam dan kekayaan budaya di Provinsi Banten dalam
             petualangan wisata yang menakjubkan.
@@ -208,7 +213,7 @@ function App() {
       </Section>
       <Section id="berita">
         <Container>
-          <div className="flex justify-between items-center mb-16">
+          <div className="flex justify-around items-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-medium leading-[1.2]">
               Berita Wisata dan Budaya Provinsi Banten
             </h2>

@@ -24,8 +24,8 @@ function WeatherApi() {
                 value={location}
                 onChange={event => setLocation(event.target.value)}
                 onKeyPress={fixedLocation}
-                placeholder='location check'
-                className='px-10 border-2 border-black' 
+                placeholder='ketik lokasi disini...'
+                className='px-5 border-2 border-black' 
             />
         </div>
         <div>
@@ -34,14 +34,14 @@ function WeatherApi() {
                 <div>
                     <h2>{data.main.temp}°F</h2>
                     <h3>{data.weather[0].main}</h3>
-                    <h3>feels like: {data.main.feels_like}°F</h3>
-                    <h3>humidity: {data.main.humidity}%</h3>
+                    <h3>terasa seperti: {data.main.feels_like}°F</h3>
+                    <h3>kelembaban    : {data.main.humidity}%</h3>
                 </div>
-            : 'Masukkan lokasi'}
+            : 'loading...'}
             {data.wind ? 
                 <div>
-                    <h3>wind speed: {data.wind.speed} mph</h3>
-                    <h3>deg: {data.wind.deg}°</h3>
+                    <h3>kecepatan angin: {data.wind.speed} mph</h3>
+                    <h3>derajat: {data.wind.deg}°</h3>
                 </div>
             : ''}
         </div>

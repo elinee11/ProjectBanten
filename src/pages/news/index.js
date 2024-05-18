@@ -27,9 +27,14 @@ export default function News() {
       <Section id="headline" isTop={true}>
         <Container className="text-white-950">
           <Breadcrumb />
+          <div className="flex flex-col gap-4 mb-6">
           <h1 className="text-4xl font-bold mb-5 leading-[1.2] mb-8">
             Berita Wisata dan Budaya Provinsi Banten
           </h1>
+          <WeatherApi />
+
+          </div>
+
           <SearchBox
             data={data}
             placeholder="Masukkan Judul Berita"
@@ -59,7 +64,6 @@ export default function News() {
               ))}
             </div>
           )}
-          <WeatherApi />
         </Container>
       </Section>
     </Template>

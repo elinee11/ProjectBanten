@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./weather.css";
 
 const WeatherBox = ({ title, value }) => {
   return (
     <div className="weather-box">
-      <h3>{title}</h3>
+      <h1>Weather</h1>
       <p>{value}</p>
+
     </div>
   );
 };
@@ -42,9 +44,8 @@ export default function Weather() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <WeatherBox
-        title="Temperature"
         value={
           Weather ? `${(Math.round (Weather.current_observation.condition.temperature))}°C` : ""
         }

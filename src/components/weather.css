@@ -1,0 +1,7 @@
+.weather-box {
+    background: #ffffff;
+    width:0px;
+    height: 80px;
+    color: #000000;
+    display: flex;
+}
