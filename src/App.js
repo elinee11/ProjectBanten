@@ -45,7 +45,7 @@ function App() {
           <div className="gap-6">
 
           <Weather />
-
+        
           <h1 className="text-4xl md:text-5xl font-bold md:max-w-2xl mb-5 leading-[1.2]">
             Jelajah Wisata & Budaya Di Provinsi Banten
           </h1>

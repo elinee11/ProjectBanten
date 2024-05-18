@@ -5,8 +5,17 @@ import "./weather.css";
 const WeatherBox = ({ title, value }) => {
   return (
     <div className="weather-box">
-      <h1>Weather</h1>
-      <p>{value}</p>
+      <p className="text-lg md:max-w-3xl">
+      Weather</p>
+      {/* <p>{value}</p> */}
+      <div className="flex">
+
+      <h1 className="text-4xl md:text-5xl font-bold md:max-w-2xl mb-5 leading-[1.2]">
+      26
+      </h1>
+<p>°</p>
+<p className="pt-3 text-3xl text-slate-100">C</p>
+      </div>
 
     </div>
   );
@@ -24,8 +33,8 @@ export default function Weather() {
       u: "c"
     },
     headers: {
-      "X-RapidAPI-Key": "ff0be89d1fmsh3552aa7226e175cp18cb7djsn4d764bc12b6c",
-      "X-RapidAPI-Host": "yahoo-weather5.p.rapidapi.com"
+      // 'X-RapidAPI-Key': '912b400cffmshdeebb3da93f61e4p1b614fjsn5ad7bcd6dfb9',
+    'X-RapidAPI-Host': 'yahoo-weather5.p.rapidapi.com'
     }
   };
 
