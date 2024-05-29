@@ -37,7 +37,7 @@ function WeatherApi() {
                     <h3>terasa seperti: {data.main.feels_like}°F</h3>
                     <h3>kelembaban    : {data.main.humidity}%</h3>
                 </div>
-            : 'loading...'}
+            : 'tekan enter'}
             {data.wind ? 
                 <div>
                     <h3>kecepatan angin: {data.wind.speed} mph</h3>
